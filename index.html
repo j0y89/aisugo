@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generatore di Canzoni AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Generatore di Canzoni AI</h1>
+    </header>
+    <main>
+        <section id="song-form">
+            <h2>Genera una nuova canzone</h2>
+            <form id="generate-song-form">
+                <label for="song-input">Testo della canzone:</label>
+                <textarea id="song-input" name="song-input" rows="4" cols="50"></textarea>
+                <button type="submit">Genera</button>
+            </form>
+        </section>
+        <section id="song-output" style="display: none;">
+            <h2>Canzone Generata</h2>
+            <div id="generated-song"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Generatore di Canzoni AI. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
