@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault();
         
         const userInput = songInput.value.trim();
+        const selectedGenre = document.getElementById('genre-select').value; // Ottieni il genere selezionato
         if (!userInput) {
             alert('Inserisci del testo per generare una canzone.');
             return;
@@ -18,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ songInput: userInput })
+            body: JSON.stringify({ songInput: userInput, genre: selectedGenre }) // Invia anche il genere musicale
         };
 
         fetch('/generate-song', requestOptions)
@@ -30,3 +31,4 @@ document.addEventListener('DOMContentLoaded', function () {
             .catch(error => console.error('Errore:', error));
     });
 });
+
