@@ -66,3 +66,13 @@ button:hover {
     border-radius: 5px;
     background-color: #f9f9f9;
 }
+/* Stili per il tema chiaro */
+/* Aggiungi qui i tuoi stili esistenti */
+
+/* Stili per il tema scuro */
+.dark-theme {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+/* Aggiungi altri stili specifici per il tema scuro se necessario */
