@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generatore di Canzoni AI</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dark-theme.css"> <!-- Aggiunto il collegamento al tema scuro -->
 </head>
 <body>
     <header>
@@ -16,6 +17,13 @@
             <form id="generate-song-form">
                 <label for="song-input">Testo della canzone:</label>
                 <textarea id="song-input" name="song-input" rows="4" cols="50"></textarea>
+                <label for="genre-select">Genere musicale:</label> <!-- Aggiunto il campo per il genere musicale -->
+                <select id="genre-select" name="genre-select">
+                    <option value="pop">Pop</option>
+                    <option value="rock">Rock</option>
+                    <option value="hip-hop">Hip Hop</option>
+                    <!-- Aggiungi altri generi musicali se necessario -->
+                </select>
                 <button type="submit">Genera</button>
             </form>
         </section>
@@ -31,4 +39,3 @@
     <script src="scripts.js"></script>
 </body>
 </html>
- 
